@@ -8,14 +8,11 @@
 			<h4>Today I made it!!</h4>
 		</div>
 		<div>
-			<p>Published: 22/06/2016, 11:52</p>
-			<h4><a href="">First Post</a></h4>
-			<p>ndikwenda  matukuya</p>
-		</div>
-		<div>
-			<p>Published: 22/06/2016, 11:55</p>
-			<h4><a href="">Second Post</a></h4>
-			<p>ndikwenda  matukuya</p>
+			{% for post in posts %}
+				<p>published: {{post.published_date}}</p>
+				<h5><a href="" >{{post.title}}</a></h5>
+				<p>{{post.text|linebreaksbr}}</p>
+			{% endfor %}
 		</div>
 	</body>
 </html>

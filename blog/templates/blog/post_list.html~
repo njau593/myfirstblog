@@ -8,14 +8,9 @@
 			<h4>Today I made it!!</h4>
 		</div>
 		<div>
-			<p>Published: 22/06/2016, 11:52</p>
-			<h4>First Post</h4>
-			<p>ndikwenda  matukuya</p>
-		</div>
-		<div>
-			<p>Published: 22/06/2016, 11:55</p>
-			<h4>First Post</h4>
-			<p>ndikwenda  matukuya</p>
+			{% for post in posts %}
+				{{post}}
+			{% endfor %}
 		</div>
 	</body>
 </html>
