@@ -1,0 +1,12 @@
+body{
+	padding-left: 15px;
+}
+
+h4{
+	color: #ff33cc;
+}
+
+h5 a{
+	color: #fca205;
+	font-family: 'Lobster';
+}
